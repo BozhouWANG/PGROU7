@@ -22,7 +22,7 @@ public class LoginView extends JFrame{
 	JLabel pwdLabel = new JLabel("Mot de passe:");
 	JTextField pwdText = new JTextField();
 	
-	JButton loginBtn = new JButton("Connecter");
+	JButton loginBtn = new JButton("Connexion");
 	
 	public LoginView(){
 		super("HCERES");

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Doctor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table border = "1" cellspacing="0">
+        <tr>
+        <td width = "180"></td>
+        <td width = "180">Accueil</td>
+        <td width = "180">Nouveau Profil</td>
+        <td width = "180">Supprimer Profil</td>
+        <td width = "180">Extraction d'activités</td>
+        <td width = "180">Ajout d'activités</td>
+        </tr>
+        </table>
+        
+        <img src = "./1.png" width="192" height = "67" alt ="logo"/>
+        <h1 align = "center">Ajout de profil </h1> 
+        <h2 align = "center">Inscription d'un doctorant </h2>
+        
+        <form> 
+            <table align="center"> 
+                <tr>
+                    <td> Nom：</td> 
+                    <td><input type="text" name="Nom" placeholder="Nom"/> </td> 
+                </tr> 
+                
+                <tr>
+                    <td> Prénom：</td> 
+                    <td><input type="text" name="Prénom" placeholder="Prénom"/></td> 
+                </tr> 
+                
+                <tr>
+                    <td> Numéro ORCID(pas obligatoire)：</td> 
+                    <td><input type="text" name="Id" placeholder="Id"/></td> 
+                </tr> 
+                
+                <tr>
+                    <td> Date soutenance：</td> 
+                    <td><input type="date" name="Date soutenance"/></td> 
+                </tr>
+                
+                <tr>
+                    <td> Durée thèse：</td> 
+                    <td><input type="text" name="Durée thèse" placeholder="Nb de mois"/></td> 
+                </tr>
+                
+                <tr>
+                    <td> Devenir：</td> 
+                    <td><input type="text" name="Devenir" /></td> 
+                </tr>
+                
+                <tr>
+                    <td>Combien avez-vous d'encadrants?</td>
+                    <td><input type="text" name="Nombre" placeholder="Nombre"/></td>
+                </tr> 
+                
+                <tr>
+                    <td>Encadrant 1</td>
+                    <td><input type="text" name="Nom" placeholder="Nom"/></td>
+                    <td><input type="text" name="Prénom" placeholder="Prénom"/></td>
+                </tr> 
+                
+                <tr>
+                    <td>Encadrant 2</td>
+                    <td><input type="text" name="Nom" placeholder="Nom"/></td>
+                    <td><input type="text" name="Prénom" placeholder="Prénom"/></td>
+                </tr> 
+
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td align="right"><input type="submit" value="Valider"/></td> 
+                </tr> 
+            </table> 
+        </form>
+    </body>
+</html>

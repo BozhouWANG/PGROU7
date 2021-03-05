@@ -1,0 +1,35 @@
+div#equipe {
+	float:left;
+	width:30%;
+	height: 100%;
+	margin: 0;
+	}
+div#historique {
+	float:right;
+	width:70%;
+	height: 100%;
+	margin: 0;
+}
+nav{
+	width: 100%;
+	margin: 0 auto;
+	background-color: whitesmoke;
+	position: sticky;
+	top: 0;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+nav ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}

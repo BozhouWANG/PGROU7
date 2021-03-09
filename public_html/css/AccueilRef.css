@@ -33,3 +33,53 @@ nav ul::after{
 	display: table;
 	clear: both;
 }
+
+
+.titrePage{
+    text-align: center;
+}
+
+.description{
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.informations{
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#choix_suppression{
+	position: relative;
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#connexion{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+img.resize {
+	max-width:50%;
+	max-height:50%;
+  }
+
+#logo{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+
+#aboutLink{
+	position : absolute;
+	bottom: 5%;
+	right: 5%;
+}

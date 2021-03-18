@@ -71,6 +71,11 @@ img.resize {
 	max-height:50%;
   }
 
+ img.resize15 {
+	max-width:15%;
+	max-height:15%;
+  }
+
 #logo{
     position: absolute;
     left: 5%;

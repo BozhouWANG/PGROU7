@@ -5,24 +5,20 @@
         <title>AccueilReferent</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/AccueilRef.css">
+        <link rel="stylesheet" type="text/css" href="css/1.css">
         
         function confirmer(){
             var res = confirm("Êtes-vous sûr.e de vouloir retirer ce membre ?");
             return res;
     </head>
-    <body>
-        <table border = "1" cellspacing="0">
-        <tr style="text-align: center;">
-        <td width = "540"></td>
-        <td width = "180">Accueil</td>
-        <td width = "180">Mes Activités</td>
-        <td width = "180">Ajout d'activités</td>
-        </tr>
-        </table>
 
-    <img src = "./1.png" width="192" height = "67" alt ="logo"/>
-    <h1 align = "center">Bienvenue Nom_Referent_Equipe</h1> 
+    <body>
+    <ul class = "menuBar">
+        <li><img id = "logo" src = "images/logo.png" alt ="logo"/></li>
+        <li><a>Accueil</a></li>
+        <li><a>Mes Activités</a></li>
+        <li><a>Ajout d'activités</a></li>
+    </ul>
 
     <div class="container" id="equipe">
     <table border style="width: 250px" cellspacing="0" class="table">

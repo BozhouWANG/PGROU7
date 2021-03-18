@@ -7,19 +7,22 @@ and open the template in the editor.
     Created on : 2021年3月1日, 上午8:15:25
     Author     : WANG
 */
-ul {
+
+/*Header menu*/
+ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow:hidden;
     background-color: #333;
+    display: inline-block;
 }
 
-li {
+.menuBar li {
     float: left;
 }
 
-li a {
+.menuBar li a {
     display: block;
     color: white;
     text-align: center;
@@ -27,6 +30,51 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.menuBar li a:hover {
     background-color: #111;
+}
+
+/*Top div : Logo if not in the menu table, Connexion/profile corner*/
+.connexionInfos{
+    float : right;
+    right: 5%;
+}
+
+.logo{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+/*Main title*/
+.headTitle{
+    text-align: center;
+}
+
+/*Center table*/
+.mainInfos{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Lower right icon*/
+.about{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+
+/*Icônes/logos*/
+.smallIcon{
+    width: 42px;
+	height: 42px;
+    vertical-align: middle;
+}
+
+#logo{
+    width: 192px;
+    height: 67px;
 }

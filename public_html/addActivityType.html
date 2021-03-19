@@ -9,10 +9,47 @@ and open the template in the editor.
         <title>AddActivity</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/1.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/1.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function openwindow(){
+                    //获取弹窗得div
+                    var modal = document.getElementById('myModal');
+                    // 获取 <span> 元素，用于关闭弹窗 （X）
+                    var span = document.getElementsByClassName("close")[0];
+                    //获取弹窗中得确定按钮
+                    var ok=document.getElementsByClassName("ok")[0];
+                    //获取弹窗中得取消按钮
+                    var no=document.getElementsByClassName("no")[0];
+                    //窗体弹出
+                    modal.style.display = "block";
+                    //点击窗体ok
+                    ok.onclick=function(){
+                            //执行弹出窗体得确定后得操作
+                            alert("执行确定按钮点击得操作");
+                            //关闭窗口
+                            modal.style.display = "none";
+                    }
+                    //点击窗体取消按钮
+                    no.onclick=function(){
+                            //直接关闭窗口
+                            modal.style.display = "none";
+                    }
+                    // 点击 <span> (x), 关闭弹窗
+                    span.onclick = function() {
+                            //直接关闭窗口
+                            modal.style.display = "none";
+                    }
+                    // 在用户点击其他地方时，关闭弹窗
+                    window.onclick = function(event) {
+                            //点击窗口外内容，关闭窗口
+                            if (event.target == modal) modal.style.display = "none";
+                    }
+            }
+    </script>
     </head>
     <body>
        
@@ -48,8 +85,22 @@ and open the template in the editor.
     		<tr><td>Platform</td></tr>
     		<tr><td>Electronic tool product</td></tr>
     	</tbody>
-
-    	<button style="float: right; float: bottom; color: white; border: outset; border-radius: 10px; background-color: green">Ajouter un nouveau type d'activité</button>
-    		
+   
+    	<button onclick="openwindow()" style="float: right; float: bottom; color: white; border: outset; border-radius: 10px; background-color: green">Ajouter un nouveau type d'activité</button>
+	<div id="myModal" class="modal">
+		  <!-- 弹窗内容 -->
+			<div class="modal-content">
+			  <div class="modal-header">
+			    <span class="close">&times;</span>
+			    <h2>Ajouter un nouveau type d'activité</h2>
+			  </div>
+			  <div class="modal-body">
+			  	Nom de la nouvelle activité： <br>
+			  	<input type="text" name="Nom de la nouvelle activité">
+			  </div>
+			  <div class="modal-footer">
+			   <button class="ok">Valider</button>&nbsp;<button class="no">Annuler</button>
+			  </div>
+			</div>
+	</div>
     	</table>
-       

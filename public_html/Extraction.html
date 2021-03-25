@@ -43,36 +43,36 @@ and open the template in the editor.
         <li><a>Ajout d'activités</a></li>
         </ul> 
         <h2 align = "center">Extraction</h2>
-        <button  onclick="openwindow()" style="float: left; float: bottom; color: white; border: outset; border-radius: 10px; background-color: green">Filtre</button>
-        <div id="myModal" class="modal">
-			<div class="modal-content">
-			  <div class="modal-header">
-			    <span class="close">&times;</span>
-			    <h2>Filtre</h2>
-			  </div>
-			  <div class="modal-body"> 
-                            <table align="center">
-                                <tr>
-                                    <td><input type="checkbox" name="titre"  />Par date d'ajout</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td><input type="checkbox" checked="checked" name="titre"/>Type d'activité</td>
-                                    <td><select name="activity">
-                                        <option value="Publication">Publication</option> 
-                                        <option value="Book">Book</option> 
-                                        </select> 
-                                    </td>
-                                </tr>
-                            </table>
-			  </div>
-			  <div class="modal-footer">
-			   <button class="ok">Valider</button>&nbsp;<button class="no">Annuler</button>
-			  </div>
-			</div>
+        <button style="float: left; float: bottom; color: white; border: outset; border-radius: 10px; background-color: green">Filtre</button>
+        <button onclick="openwindow()" style="float: left; float: bottom; color: white; border: outset; border-radius: 10px; background-color: green">Trier par</button>
+                <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Trier</h2>
+                  </div>
+                  <div class="modal-body"> 
+                    <table align="center">
+                        <tr>
+                            <td><input type="checkbox" name="titre"  />Par date d'ajout</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" checked="checked" name="titre"/>Type d'activité</td>
+                            <td><select name="activity">
+                                <option value="Publication">Publication</option> 
+                                <option value="Book">Book</option> 
+                                </select> 
+                            </td>
+                        </tr>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                   <button class="ok">Valider</button>&nbsp;<button class="no">Annuler</button>
+                  </div>
+                </div>
 	</div>
         
-        <button style="float: left; float: bottom; color: white; border: outset; border-radius: 10px; background-color: green">Trier par</button> 
         <table align="right"> 
                 <tr><td>Admin</td></tr>
                 <tr><td>Connecté</td></tr>

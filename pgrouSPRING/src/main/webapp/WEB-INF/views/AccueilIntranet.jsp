@@ -13,10 +13,10 @@
     </ul>
 
     <div class="connexionInfos">
-        <p>Connexion</p>
         <form action="login.do" method="POST">
-            <input type="text" value="Username" /><br>
-            <input type="password" value="Password"/><br>
+            <p>Connexion</p>
+            <input type="login" name="user" value="Username" /><br>
+            <input type="password" name="passwd" value="Password"/><br>
             <input type="submit" value="Valider"/><br>
         </form>
         <a href="#">Mot de passe oublié ?</a>

@@ -27,10 +27,10 @@ public class LoginController {
     @RequestMapping(value="login.do",method=RequestMethod.POST)
     public ModelAndView handlePost(@ModelAttribute("User")User anUser) {
         ModelAndView returned;
-        if ((anUser.getUser().equals("admin")&&(anUser.getPasswd().equals("adminPass")))){
-            returned = new ModelAndView("AccueilIntranet");
-        } else {
+        if ((anUser.getUser().equals("admin")&&(anUser.getPasswd().equals("admin")))){
             returned = new ModelAndView("AccueilAdmin");
+        } else {
+            returned = new ModelAndView("AccueilIntranet");
         }
         return returned;
     }

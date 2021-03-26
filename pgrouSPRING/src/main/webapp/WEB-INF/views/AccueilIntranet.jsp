@@ -33,8 +33,10 @@
         <P>Informations relatives à l'intranet à modifier ?</P>
     </div>
 
-    <p class="about" action="about.do" method="POST">
-        <img class="smallIcon" src="images/About.png" alt ="about"/>
-    </p>
+    <div class="about">
+        <form action="about.do" method="POST" >
+            <input type="image" class="smallIcon" src="images/About.png" alt ="about"/>        
+        </form>
+    </div>
 
 </body>

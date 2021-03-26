@@ -7,7 +7,7 @@ package org.centrale.pgrou.controllers;
 
 /**
  *
- * @author kwyhr
+ * @author ECN
  */
 public class User {
     private String user;

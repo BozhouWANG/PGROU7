@@ -1,3 +1,4 @@
+org\centrale\pgrou\controllers\User.class
 org\centrale\pgrou\controllers\LoginController.class
 org\centrale\pgrou\controllers\StartupController.class
-org\centrale\pgrou\controllers\User.class
+org\centrale\pgrou\controllers\AboutController.class

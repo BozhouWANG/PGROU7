@@ -18,20 +18,24 @@ and open the template in the editor.
         <li><a>Accueil</a></li>
         <li><a>Nouveau Profil</a></li>
         <li><a>Supprimer Profil</a></li>
-        <li><a>Extraction d'activitÃ©s</a></li>
-        <li><a>Ajout d'activitÃ©s</a></li>
+        <li><a>Extraction d'activités</a></li>
+        <li><a>Ajout d'activités</a></li>
     </ul>
 
     <h1 class="headTitle">Page Administrateur</h1> 
        
     <table style="align: center" align="center" width="450px" height="150px">
         <tr>
-            <td align="center"><button style="width:180px"><img class="smallIcon" src="images/add_user.png">Nouveau profil</button></td>
-            <td align="center"><button style="width:180px"><img class="smallIcon" src="images/add.png">Ajout d'activitÃ©</button></td>
+            <td align="center">
+                <form action="newProfile.do" method="GET" >
+                    <button style="width:180px"><img class="smallIcon" src="images/add_user.png">Nouveau profil</button>
+                </form>
+            </td>
+            <td align="center"><button style="width:180px"><img class="smallIcon" src="images/add.png">Ajout d'activité</button></td>
         </tr>
         <tr>
             <td align="center" ><button style="width:180px"><img class="smallIcon" src="images/delete.png">Supprimer profil</button></td>
-            <td align="center"><button style="width:180px"><img class="smallIcon" src="images/extract.png">Extraction d'activitÃ©</button></td>
+            <td align="center"><button style="width:180px"><img class="smallIcon" src="images/extract.png">Extraction d'activités</button></td>
         </tr>
         </table>
     </body>

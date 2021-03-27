@@ -1,3 +1,5 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,8 +15,8 @@
             <li><a>Accueil</a></li>
             <li><a>Nouveau Profil</a></li>
             <li><a>Supprimer Profil</a></li>
-            <li><a>Extraction d'activités</a></li>
-            <li><a>Ajout d'activités</a></li>
+            <li><a>Extraction d'activitÃ©s</a></li>
+            <li><a>Ajout d'activitÃ©s</a></li>
         </ul>
 
 
@@ -23,24 +25,19 @@
         <div class="mainInfos">
             <P>Choisissez le profil que vous voulez supprimer</P>
         </div>
-
+        
         <div class="listeEquipe">
             <table border style="width: 250px" cellspacing="0" class="table">
                 <caption><h2><img id="teamIcon" src="images/team.png" alt ="team"/>Liste des chercheurs</h2></caption>
-                <tbody><tr>
-                    <td>Chercheur 1</td>
-                    <td><button onClick="confirmer()"><img src="images/delete.png" width="30px"/>Supprimer</button></td>
-                </tr>
-                <tr>
-                    <td>Chercheur 2</td>
-                    <td><button onClick="confirmer()"><img src="images/delete.png" width="30px"/>Supprimer</button></td>
-                </tr>
-                <tr>
-                    <td>...</td>
-                    <td><button onClick="confirmer()"><img src="images/delete.png" width="30px"/>Supprimer</button></td>
-                </tr>
+                <tbody>
+                <c:forEach var="researcher" items="${listResearchers}">
+                    <tr>
+                        <td>${researcher.surnameResearcher} ${researcher.nameResearcher}</td>
+                        <td><button onClick="confirmer()"><img src="images/delete.png" width="30px"/>Supprimer</button></td>
+                    </tr>
+                </c:forEach>
             </table>
-        </div>  
+        </div>
 
         <p class="about">
             <img class="smallIcon" src="images/About.png" alt ="about"/>

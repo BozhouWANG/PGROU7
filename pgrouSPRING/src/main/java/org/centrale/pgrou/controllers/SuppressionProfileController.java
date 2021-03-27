@@ -5,6 +5,10 @@
  */
 package org.centrale.pgrou.controllers;
 
+import java.util.List;
+import org.centrale.pgrou.items.Researcher;
+import org.centrale.pgrou.repositories.ResearcherRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,8 +20,18 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class SuppressionProfileController {
+    
+    @Autowired
+    private ResearcherRepository researcherRepository;
+    
     @RequestMapping(value="suppressionProfile.do",method=RequestMethod.GET)
     public ModelAndView handleGet(){  
-        return new ModelAndView("Suppression_de_profil");
+        ModelAndView returned;
+        List<Researcher> listResearchers = researcherRepository.findAll();
+        returned = new ModelAndView("Suppression_de_profil");
+        returned.addObject("listResearchers", listResearchers);
+        return returned;
     }
+    
+    
 }

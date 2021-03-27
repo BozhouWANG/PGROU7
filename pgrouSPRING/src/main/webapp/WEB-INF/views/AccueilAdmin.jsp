@@ -31,10 +31,18 @@ and open the template in the editor.
                     <button style="width:180px"><img class="smallIcon" src="images/add_user.png">Nouveau profil</button>
                 </form>
             </td>
-            <td align="center"><button style="width:180px"><img class="smallIcon" src="images/add.png">Ajout d'activité</button></td>
+            <td align="center">
+                <form action="newActivity.do" method="GET" >
+                    <button style="width:180px"><img class="smallIcon" src="images/add.png">Ajout d'activité</button>
+                </form>
+            </td>
         </tr>
         <tr>
-            <td align="center" ><button style="width:180px"><img class="smallIcon" src="images/delete.png">Supprimer profil</button></td>
+            <td align="center" >
+                <form action="suppressionProfile.do" method="GET" >
+                    <button style="width:180px"><img class="smallIcon" src="images/delete.png">Supprimer profil</button>
+                </form>
+            </td>
             <td align="center"><button style="width:180px"><img class="smallIcon" src="images/extract.png">Extraction d'activités</button></td>
         </tr>
         </table>

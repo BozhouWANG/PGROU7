@@ -37,12 +37,12 @@ and open the template in the editor.
                 </tr> 
                 
                 <tr>
-                    <td> Prénomš</td> 
+                    <td> Prénom</td> 
                     <td><input type="text" name="Prénom" placeholder="Prénom"/></td> 
                 </tr> 
                 
                 <tr>
-                    <td> Numéro ORCIDš</td> 
+                    <td> Numéro ORCID</td> 
                     <td><input type="text" name="Id" placeholder="Id"/></td> 
                 </tr> 
                 

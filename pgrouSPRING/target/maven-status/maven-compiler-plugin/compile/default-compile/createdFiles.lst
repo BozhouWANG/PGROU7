@@ -1,7 +1,9 @@
+org\centrale\pgrou\controllers\SuppressionProfileController.class
 org\centrale\pgrou\controllers\NewDoctController.class
 org\centrale\pgrou\controllers\typeProfileChoice.class
 org\centrale\pgrou\controllers\NewChercheurController.class
 org\centrale\pgrou\controllers\User.class
+org\centrale\pgrou\controllers\FormActiviteController.class
 org\centrale\pgrou\controllers\StartupController.class
 org\centrale\pgrou\controllers\LoginController.class
 org\centrale\pgrou\controllers\AboutController.class

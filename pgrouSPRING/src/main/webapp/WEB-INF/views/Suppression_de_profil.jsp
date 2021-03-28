@@ -15,8 +15,8 @@
             <li><a>Accueil</a></li>
             <li><a>Nouveau Profil</a></li>
             <li><a>Supprimer Profil</a></li>
-            <li><a>Extraction d'activitÃ©s</a></li>
-            <li><a>Ajout d'activitÃ©s</a></li>
+            <li><a>Extraction d'activités</a></li>
+            <li><a>Ajout d'activités</a></li>
         </ul>
 
 
@@ -33,8 +33,13 @@
                 <c:forEach var="researcher" items="${listResearchers}">
                     <tr>
                         <td>${researcher.surnameResearcher} ${researcher.nameResearcher}</td>
-                        <td><button onClick="confirmer()"><img src="images/delete.png" width="30px"/>Supprimer</button></td>
-                    </tr>
+                        <td>
+                            <form action="delete.do" method="POST">
+                                <input type="hidden" name="id" value="${researcher.idOrcidResearcher}" />
+                                <button onClick="confirmer()"><img src="images/delete.png" width="30px"/>Supprimer</button>
+                            </form>  
+                        </td>
+                    </tr>   
                 </c:forEach>
             </table>
         </div>

@@ -101,6 +101,7 @@ org\centrale\pgrou\items\ReviewingJournalArticles_.class
 org\centrale\pgrou\items\SeiIndustrialRDContract_.class
 org\centrale\pgrou\items\RolePiThesis.class
 org\centrale\pgrou\items\SeiLeadConsortiumIndustry_.class
+org\centrale\pgrou\controllers\ResearcherController.class
 org\centrale\pgrou\items\InvolvementTrainingM1M2TraineeHosting_.class
 org\centrale\pgrou\items\PatentLicenceInventionDisclosure.class
 org\centrale\pgrou\items\Publication.class

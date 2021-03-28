@@ -6,7 +6,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import org.centrale.pgrou.items.RolePiThesis;
 import org.centrale.pgrou.items.TypeThesis;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-27T11:28:52")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-28T18:00:41")
 @StaticMetamodel(ProjectEvaluationThesis.class)
 public class ProjectEvaluationThesis_ { 
 

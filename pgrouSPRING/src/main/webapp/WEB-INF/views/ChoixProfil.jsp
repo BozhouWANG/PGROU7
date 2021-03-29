@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,8 +20,8 @@
         <form action="suppressionProfile.do" method="GET" >   
             <li><button><a>Supprimer Profil</a></button></li>
         </form> 
-        <li><a>Extraction d'activités</a></li>
-        <li><a>Ajout d'activités</a></li>
+        <li><a>Extraction d'activitÃ©s</a></li>
+        <li><a>Ajout d'activitÃ©s</a></li>
     </ul>
 
 

@@ -1,3 +1,5 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -14,11 +16,17 @@ and open the template in the editor.
     <body>
         <ul class = "menuBar">
             <li><img id = "logo" src = "images/logo.png" alt ="logo"/></li>
-            <li><a>Accueil</a></li>
-            <li><a>Nouveau Profil</a></li>
-            <li><a>Supprimer Profil</a></li>
-            <li><a>Extraction d'activités</a></li>
-            <li><a>Ajout d'activités</a></li>
+            <form action="login.do" method="GET" >  
+                <li><button><a>Accueil</a></button></li>
+            </form>
+            <form action="newProfile.do" method="GET" >   
+                <li><button><a>Nouveau Profil</a></button></li>
+            </form>
+            <form action="suppressionProfile.do" method="GET" >   
+                <li><button><a>Supprimer Profil</a></button></li>
+            </form> 
+            <li><a>Extraction d'activitÃ©s</a></li>
+            <li><a>Ajout d'activitÃ©s</a></li>
         </ul>
         
         <table align="center">
@@ -29,26 +37,32 @@ and open the template in the editor.
         </table>
         <h2 align = "center">Inscription d'un chercheur </h2>
         
-        <form> 
+        
+        <form action="add.do" method="POST">
             <table align="center"> 
                 <tr>
                     <td> Nom</td> 
-                    <td><input type="text" name="Nom" placeholder="Nom"/></td> 
+                    <td><input type="text" name="nameResearcher" placeholder="Nom"/></td> 
                 </tr> 
                 
                 <tr>
-                    <td> Prénom</td> 
-                    <td><input type="text" name="Prénom" placeholder="Prénom"/></td> 
+                    <td> PrÃ©nom</td> 
+                    <td><input type="text" name="surnameResearcher" placeholder="PrÃ©nom"/></td> 
                 </tr> 
                 
                 <tr>
-                    <td> Numéro ORCID</td> 
-                    <td><input type="text" name="Id" placeholder="Id"/></td> 
+                    <td> NumÃ©ro ORCID (*)</td> 
+                    <td><input type="text" name="idOrcidResearcher" placeholder="Id"/></td> 
                 </tr> 
                 
                 <tr>
-                    <td> Nom de l'employeur</td> 
-                    <td><input type="text" name="Nom de l'employeur"/></td> 
+                    <td> Nom de l'employeur (*)</td> 
+                    <td><select name="idEmployer">
+                            <c:forEach var="employer" items="${listEmployer}">
+                                <option value="${employer.idEmployer}">${employer.nameEmployer}</option>
+                            </c:forEach>
+                        </select>
+                    </td>
                 </tr>
                 
                 <tr>
@@ -56,7 +70,7 @@ and open the template in the editor.
                     <td>
                         <select name="Statut">
                             <option value="Statut1" selected="selected">Statut1</option> 
-                            <option value="Statut2">Statut2</option> 
+                            <option value="Statut2" >Statut2</option> 
                         </select> 
                     </td> 
                 </tr>
@@ -64,34 +78,35 @@ and open the template in the editor.
                 <tr>
                     <td>Type de contrat</td>
                     <td>
-                        <select name="Type de contrat">
+                        <select name="contractType">
                             <option value="CDD" selected="selected">CDD</option> 
-                            <option value="CDI">CDI</option> 
+                            <option value="CDI" >CDI</option> 
                         </select> 
                     </td> 
                 </tr>
                 
                 <tr>
                     <td> Fonction</td> 
-                    <td><input type="text" name="Fonction"/></td> 
+                    <td><input type="text" name="function"/></td> 
                 </tr>
                 
                 <tr>
                     <td> E-mail</td> 
-                    <td><input type="text" name="E-mail"/></td> 
+                    <td><input type="text" name="emailAddress"/></td> 
                 </tr>
+                
                 
                 <tr>
                     <td>Encordrez vous un doctorant?</td> 
-                    <td><input type="radio" name="radio" value="Oui"/>Oui
-                        <input type="radio" name="radio" value="Non" />Non 
+                    <td><input type="radio" name="encadreDoct" value="Oui"/>Oui
+                        <input type="radio" name="encadreDoct" value="Non" />Non 
                     </td> 
                 </tr> 
                 
                 <tr>
                     <td> Si oui, indique de qui il s'agit</td>
                     <td>
-                    <select name="Quel doctorant">
+                    <select name="Quel_doctorant">
                             <option value="Nom_doctorant_1" selected="selected">Nom_doctorant_1</option> 
                             <option value="Nom_doctorant_2">Nom_doctorant_1</option> 
                             <option value="Nom_doctorant_3">Nom_doctorant_3</option> 
@@ -101,9 +116,16 @@ and open the template in the editor.
                 
                 <tr>
                     <td> </td>
-                    <td align="right"><input type="submit" value="Valider" onclick = "alert('Saisie réussie !')"/></td> 
+                    <td align="right"><input type="submit" value="Valider"/></td> 
                 </tr> 
             </table> 
         </form>
+        
+        <div class="about">
+            <form action="about.do" method="GET" >
+                <input type="image" class="smallIcon" src="images/About.png" alt ="about"/>        
+            </form>
+        </div>
+        
     </body>
 </html>

@@ -85,5 +85,12 @@ and open the template in the editor.
                 </tr> 
             </table> 
         </form>
+        
+        <div class="about">
+            <form action="about.do" method="GET" >
+                <input type="image" class="smallIcon" src="images/About.png" alt ="about"/>        
+            </form>
+        </div>
+        
     </body>
 </html>

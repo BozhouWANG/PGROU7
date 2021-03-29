@@ -19,6 +19,7 @@ org\centrale\pgrou\items\EditorialActivity_.class
 org\centrale\pgrou\items\SrAward.class
 org\centrale\pgrou\items\IncomingMobility.class
 org\centrale\pgrou\items\TypePatent.class
+org\centrale\pgrou\repositories\EmployerRepository.class
 org\centrale\pgrou\controllers\NewDoctController.class
 org\centrale\pgrou\items\SeiLabcomCreation.class
 org\centrale\pgrou\items\ToolProductDecisionSupportTool.class
@@ -60,6 +61,7 @@ org\centrale\pgrou\items\BookChapter.class
 org\centrale\pgrou\items\ChoicePublication_.class
 org\centrale\pgrou\items\ProjectEvaluationGrant_.class
 org\centrale\pgrou\items\LabEvaluation.class
+org\centrale\pgrou\controllers\AddResearcherController.class
 org\centrale\pgrou\items\Mail_.class
 org\centrale\pgrou\items\BackgroundStudent.class
 org\centrale\pgrou\items\RolePiLabEval_.class

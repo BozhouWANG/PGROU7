@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Formulaire de saise d'activitÃ©</title>
+        <title>Formulaire de saise d'activité</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/1.css">
@@ -11,21 +11,21 @@
         <ul class = "menuBar">
             <li><img id = "logo" src = "images/logo.png" alt ="logo"/></li>
             <li><a>Accueil</a></li>
-            <li><a>Mes ActivitÃ©s</a></li>
-            <li><a>Ajout d'activitÃ©s</a></li>
+            <li><a>Mes Activités</a></li>
+            <li><a>Ajout d'activités</a></li>
         </ul>
 
-        <h1 align = "center">Formulaire de saise d'activitÃ© </h1>
+        <h1 align = "center">Formulaire de saise d'activité </h1>
 
         <table align="center"> 
             <tr>
-                <td> Veuillez sÃ©lectionner une activitÃ©ï¼š</td>
+                <td> Veuillez sélectionner une activité</td>
                 <td> 
                     <select name="select1" onmousedown="if(this.options.length>4){this.size=5;}"  onchange='this.size=0;' onblur="this.size=0;"> 
                     <option value="1">Publification</option>
                     <option value="2">Book</option>
                     <option value="3">Platform</option>
-                    <option value="4">RÃ©seau</option>
+                    <option value="4">Réseau</option>
                     <option value="5">Expertise</option>
                     <option value="6">Lab Evalution</option>
                     <option value="7">...</option>
@@ -33,5 +33,12 @@
                 </td> 
             </tr>
         </table>
+        
+        <div class="about">
+            <form action="about.do" method="GET" >
+                <input type="image" class="smallIcon" src="images/About.png" alt ="about"/>        
+            </form>
+        </div>
+        
     </body>
 </html>

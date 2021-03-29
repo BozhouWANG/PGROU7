@@ -9,7 +9,7 @@ import org.centrale.pgrou.items.Activity;
 import org.centrale.pgrou.items.BelongsTeam;
 import org.centrale.pgrou.items.Referent;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-29T21:59:57")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-29T22:17:13")
 @StaticMetamodel(Team.class)
 public class Team_ { 
 

@@ -21,7 +21,7 @@ public class LoginController {
     
     @RequestMapping(value="login.do",method=RequestMethod.GET)
     public ModelAndView handleGet(){  
-        return new ModelAndView("AcceuilAdmin");
+        return new ModelAndView("AccueilAdmin");
     }
     
     @RequestMapping(value="login.do",method=RequestMethod.POST)

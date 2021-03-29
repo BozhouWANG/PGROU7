@@ -10,7 +10,7 @@
 
     <ul class = "menuBar">
         <li><img id = "logo" src = "images/logo.png" alt ="logo"/></li>
-        <<form action="login.do" method="GET" >  
+        <form action="login.do" method="GET" >  
             <li><button><a>Accueil</a></button></li>
         </form>
         <form action="newProfile.do" method="GET" >   

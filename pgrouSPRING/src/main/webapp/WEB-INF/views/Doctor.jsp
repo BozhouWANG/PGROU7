@@ -1,9 +1,5 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Doctor</title>
@@ -17,8 +13,8 @@ and open the template in the editor.
             <li><a>Accueil</a></li>
             <li><a>Nouveau Profil</a></li>
             <li><a>Supprimer Profil</a></li>
-            <li><a>Extraction d'activités</a></li>
-            <li><a>Ajout d'activités</a></li>
+            <li><a>Extraction d'activitÃ©s</a></li>
+            <li><a>Ajout d'activitÃ©s</a></li>
         </ul>
         
         <table align="center">
@@ -37,12 +33,12 @@ and open the template in the editor.
                 </tr> 
                 
                 <tr>
-                    <td> Prénom</td> 
-                    <td><input type="text" name="Prénom" placeholder="Prénom"/></td> 
+                    <td> PrÃ©nom</td> 
+                    <td><input type="text" name="PrÃ©nom" placeholder="PrÃ©nom"/></td> 
                 </tr> 
                 
                 <tr>
-                    <td> Numéro ORCID(pas obligatoire)</td> 
+                    <td> NumÃ©ro ORCID(pas obligatoire)</td> 
                     <td><input type="text" name="Id" placeholder="Id"/></td> 
                 </tr> 
                 
@@ -52,8 +48,8 @@ and open the template in the editor.
                 </tr>
                 
                 <tr>
-                    <td> Durée thèse</td> 
-                    <td><input type="text" name="Durée thèse" placeholder="Nb de mois"/></td> 
+                    <td> DurÃ©e thÃ¨se</td> 
+                    <td><input type="text" name="DurÃ©e thÃ¨se" placeholder="Nb de mois"/></td> 
                 </tr>
                 
                 <tr>
@@ -69,19 +65,19 @@ and open the template in the editor.
                 <tr>
                     <td>Encadrant 1</td>
                     <td><input type="text" name="Nom" placeholder="Nom"/></td>
-                    <td><input type="text" name="Prénom" placeholder="Prénom"/></td>
+                    <td><input type="text" name="PrÃ©nom" placeholder="PrÃ©nom"/></td>
                 </tr> 
                 
                 <tr>
                     <td>Encadrant 2</td>
                     <td><input type="text" name="Nom" placeholder="Nom"/></td>
-                    <td><input type="text" name="Prénom" placeholder="Prénom"/></td>
+                    <td><input type="text" name="PrÃ©nom" placeholder="PrÃ©nom"/></td>
                 </tr> 
 
                 <tr>
                     <td> </td>
                     <td> </td>
-                    <td align="right"><input type="submit" value="Valider" onclick = "alert('Saisie réussie !')"/></td> 
+                    <td align="right"><input type="submit" value="Valider" onclick = "alert('Saisie rÃ©ussie !')"/></td> 
                 </tr> 
             </table> 
         </form>

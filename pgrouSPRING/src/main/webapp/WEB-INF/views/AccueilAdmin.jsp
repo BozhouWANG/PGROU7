@@ -1,9 +1,5 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>AccueilAdmin</title>
@@ -11,8 +7,8 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/1.css">
     </head>
-    <body>
-        
+    
+    <body>   
     <ul class = "menuBar">
         <li><img id = "logo" src = "images/logo.png" alt ="logo"/></li>
         
@@ -25,8 +21,8 @@ and open the template in the editor.
         <form action="suppressionProfile.do" method="GET" >   
             <li><button><a>Supprimer Profil</a></button></li>
         </form> 
-        <li><a>Extraction d'activités</a></li>
-        <li><a>Ajout d'activités</a></li>
+        <li><a>Extraction d'activitÃ©s</a></li>
+        <li><a>Ajout d'activitÃ©s</a></li>
     </ul>
 
     <h1 class="headTitle">Page Administrateur</h1> 
@@ -40,7 +36,7 @@ and open the template in the editor.
             </td>
             <td align="center">
                 <form action="newActivity.do" method="GET" >
-                    <button style="width:180px"><img class="smallIcon" src="images/add.png">Ajout d'activité</button>
+                    <button style="width:180px"><img class="smallIcon" src="images/add.png">Ajout d'activitÃ©</button>
                 </form>
             </td>
         </tr>
@@ -50,7 +46,7 @@ and open the template in the editor.
                     <button style="width:180px"><img class="smallIcon" src="images/delete.png">Supprimer profil</button>
                 </form>
             </td>
-            <td align="center"><button style="width:180px"><img class="smallIcon" src="images/extract.png">Extraction d'activités</button></td>
+            <td align="center"><button style="width:180px"><img class="smallIcon" src="images/extract.png">Extraction d'activitÃ©s</button></td>
         </tr>
         </table>
     

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="org.centrale_pgrouSPRING_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>org.centrale.pgrou.items.BookChapter</class>
+    <class>org.centrale.pgrou.items.ChoicePublicOutreach</class>
+    <class>org.centrale.pgrou.items.SrResponsibilityLearnedScientificSociety</class>
+    <class>org.centrale.pgrou.items.ScientificExpertise</class>
+    <class>org.centrale.pgrou.items.SeiLabcomCreation</class>
+    <class>org.centrale.pgrou.items.ToolProductCohort</class>
+    <class>org.centrale.pgrou.items.ToolProductSoftware</class>
+    <class>org.centrale.pgrou.items.ToolProductDecisionSupportTool</class>
+    <class>org.centrale.pgrou.items.StatusThesis</class>
+    <class>org.centrale.pgrou.items.Book</class>
+    <class>org.centrale.pgrou.items.InvolvementTrainingPedagogicalResponsibility</class>
+    <class>org.centrale.pgrou.items.SeiIndustrialRDContract</class>
+    <class>org.centrale.pgrou.items.ProjectEvaluationGrant</class>
+    <class>org.centrale.pgrou.items.TypePatent</class>
+    <class>org.centrale.pgrou.items.NationalInternationalCollaboration</class>
+    <class>org.centrale.pgrou.items.FunctionEditorialActivity</class>
+    <class>org.centrale.pgrou.items.PublicOutreach</class>
+    <class>org.centrale.pgrou.items.TypeActivity</class>
+    <class>org.centrale.pgrou.items.InvitedOralCommunication</class>
+    <class>org.centrale.pgrou.items.ProjectEvaluationThesis</class>
+    <class>org.centrale.pgrou.items.EducationalOutput</class>
+    <class>org.centrale.pgrou.items.SeiLeadConsortiumIndustry</class>
+    <class>org.centrale.pgrou.items.TypeResarchContract</class>
+    <class>org.centrale.pgrou.items.TypeInvitedOralCom</class>
+    <class>org.centrale.pgrou.items.InvolvementTrainingM1M2TraineeHosting</class>
+    <class>org.centrale.pgrou.items.TypeConsortium</class>
+    <class>org.centrale.pgrou.items.PatentLicenceInventionDisclosure</class>
+    <class>org.centrale.pgrou.items.ToolProductDatabase</class>
+    <class>org.centrale.pgrou.items.TrainingThesisPublication</class>
+    <class>org.centrale.pgrou.items.Publication</class>
+    <class>org.centrale.pgrou.items.CategoryGrant</class>
+    <class>org.centrale.pgrou.items.ChoiceEducationalOutput</class>
+    <class>org.centrale.pgrou.items.Team</class>
+    <class>org.centrale.pgrou.items.SeiCifreFellowship</class>
+    <class>org.centrale.pgrou.items.Network</class>
+    <class>org.centrale.pgrou.items.ChoiceTypeCollab</class>
+    <class>org.centrale.pgrou.items.DoctoralStudent</class>
+    <class>org.centrale.pgrou.items.RolePiScientificRecognition</class>
+    <class>org.centrale.pgrou.items.Referent</class>
+    <class>org.centrale.pgrou.items.Activity</class>
+    <class>org.centrale.pgrou.items.SrAward</class>
+    <class>org.centrale.pgrou.items.TypeMeeting</class>
+    <class>org.centrale.pgrou.items.TypeCongressOrganisation</class>
+    <class>org.centrale.pgrou.items.Platform</class>
+    <class>org.centrale.pgrou.items.SeiCompanyCreation</class>
+    <class>org.centrale.pgrou.items.SeiNetworkUnitCreation</class>
+    <class>org.centrale.pgrou.items.Mail</class>
+    <class>org.centrale.pgrou.items.ChoicePublication</class>
+    <class>org.centrale.pgrou.items.TypeInvolvementInTraining</class>
+    <class>org.centrale.pgrou.items.Researcher</class>
+    <class>org.centrale.pgrou.items.Emploeur</class>
+    <class>org.centrale.pgrou.items.Admin</class>
+    <class>org.centrale.pgrou.items.BackgroundStudent</class>
+    <class>org.centrale.pgrou.items.OutgoingMobility</class>
+    <class>org.centrale.pgrou.items.RolePiLabEval</class>
+    <class>org.centrale.pgrou.items.RolePiThesis</class>
+    <class>org.centrale.pgrou.items.ResearchContractFundedPublicCharitableInst</class>
+    <class>org.centrale.pgrou.items.TypeOralComPoster</class>
+    <class>org.centrale.pgrou.items.BelongsTeam</class>
+    <class>org.centrale.pgrou.items.Supervisor</class>
+    <class>org.centrale.pgrou.items.ToolProductBiocollection</class>
+    <class>org.centrale.pgrou.items.IncomingMobility</class>
+    <class>org.centrale.pgrou.items.OralCommunicationPoster</class>
+    <class>org.centrale.pgrou.items.EditorialActivity</class>
+    <class>org.centrale.pgrou.items.PostDoc</class>
+    <class>org.centrale.pgrou.items.MeetingCongressOrg</class>
+    <class>org.centrale.pgrou.items.TypeThesis</class>
+    <class>org.centrale.pgrou.items.ResponsibilityInstitutionalComiteeJury</class>
+    <class>org.centrale.pgrou.items.InvitedSeminar</class>
+    <class>org.centrale.pgrou.items.ChoiceScientificExpertise</class>
+    <class>org.centrale.pgrou.items.RolePiGrant</class>
+    <class>org.centrale.pgrou.items.LabEvaluation</class>
+    <class>org.centrale.pgrou.items.SeiClinicalTrial</class>
+    <class>org.centrale.pgrou.items.ReviewingJournalArticles</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/appDatabase"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="P0stgreSQL"/>
+    </properties>
+  </persistence-unit>
+</persistence>

@@ -13,10 +13,12 @@
     </ul>
 
     <div class="connexionInfos">
-        <p>Connexion</p>
-        <input type="text" value="Username" /><br>
-        <input type="password" value="Password"/><br>
-        <input type="submit" value="Valider"/><br>
+        <form action="login.do" method="POST">
+            <p>Connexion</p>
+            <input type="login" name="user" value="Username" /><br>
+            <input type="password" name="passwd" value="Password"/><br>
+            <input type="submit" value="Valider"/><br>
+        </form>
         <a href="#">Mot de passe oublié ?</a>
     </div>
 
@@ -31,8 +33,10 @@
         <P>Informations relatives à l'intranet à modifier ?</P>
     </div>
 
-    <p class="about">
-        <img class="smallIcon" src="images/About.png" alt ="about"/>
-    </p>
+    <div class="about">
+        <form action="about.do" method="GET" >
+            <input type="image" class="smallIcon" src="images/About.png" alt ="about"/>        
+        </form>
+    </div>
 
 </body>

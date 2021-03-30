@@ -4,8 +4,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 2021年3月1日, 上午8:15:25
-    Author     : WANG
+    Author : ECN
 */
 
 /*Header menu*/
@@ -14,8 +13,7 @@ ul{
     margin: 0;
     padding: 0;
     overflow:hidden;
-    background-color: #333;
-    display: inline-block;
+    background-color: rgb(240, 232, 232);
 }
 
 .menuBar li {
@@ -24,14 +22,14 @@ ul{
 
 .menuBar li a {
     display: block;
-    color: white;
+    /*color: white;*/
     text-align: center;
     padding: 26px 20px;
     text-decoration: none;
 }
 
 .menuBar li a:hover {
-    background-color: #111;
+    background-color: rgb(163, 110, 110);
 }
 
 /*Top div : Logo if not in the menu table, Connexion/profile corner*/

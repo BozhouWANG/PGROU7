@@ -22,7 +22,9 @@
                 <li><a onclick="document.getElementById('suppProfileForm').submit();">Supprimer Profil</a></button></li>
             </form> 
             <li><a>Extraction d'activités</a></li>
-            <li><a>Ajout d'activités</a></li>
+            <form id="newActivity" action="newActivity.do" method="GET" >   
+                <li><a onclick="document.getElementById('newActivity').submit();">Ajout d'activités</a></li>
+            </form>
         </ul>
 
         <div class="connexionInfos">
@@ -46,7 +48,7 @@
                     <tr>
                         <td>${researcher.surnameResearcher} ${researcher.nameResearcher}</td>
                         <td>
-                            <form action="delete.do" method="POST">
+                            <form action="suppressionProfile.do" method="POST">
                                 <input type="hidden" name="id" value="${researcher.idOrcidResearcher}" />
                                 <button onClick="confirmer()"><img src="images/delete.png" width="30px"/>Supprimer</button>
                             </form>  

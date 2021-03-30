@@ -20,7 +20,9 @@
                 <li><a onclick="document.getElementById('suppProfileForm').submit();">Supprimer Profil</a></button></li>
             </form> 
             <li><a>Extraction d'activités</a></li>
-            <li><a>Ajout d'activités</a></li>
+            <form id="newActivity" action="newActivity.do" method="GET" >   
+                <li><a onclick="document.getElementById('newActivity').submit();">Ajout d'activités</a></li>
+            </form>
         </ul>
         
         <div class="connexionInfos">
@@ -38,12 +40,12 @@
         </table>
         <h2 align = "center">Inscription d'un doctorant </h2>
         
-        <form> 
+        <form action="newDoctor.do" method="POST"> 
             <table align="center"> 
                 <tr>
-                    <td> Nom</td> 
+                    <td> Nom</td>
                     <td><input type="text" name="Nom" placeholder="Nom"/> </td> 
-                </tr> 
+                </tr>
                 
                 <tr>
                     <td> Prénom</td> 
@@ -76,13 +78,7 @@
                 </tr> 
                 
                 <tr>
-                    <td>Encadrant 1</td>
-                    <td><input type="text" name="Nom" placeholder="Nom"/></td>
-                    <td><input type="text" name="Prénom" placeholder="Prénom"/></td>
-                </tr> 
-                
-                <tr>
-                    <td>Encadrant 2</td>
+                    <td>Encadrant</td> <!-- Il peut y en avoir plusieurs : faire une boucle, avec une sélection entre ceux déjà dans la base-->
                     <td><input type="text" name="Nom" placeholder="Nom"/></td>
                     <td><input type="text" name="Prénom" placeholder="Prénom"/></td>
                 </tr> 
@@ -90,7 +86,7 @@
                 <tr>
                     <td> </td>
                     <td> </td>
-                    <td align="right"><input type="submit" value="Valider" onclick = "alert('Saisie réussie !')"/></td> 
+                    <td align="right"><input type="submit" value="Valider"/></td> 
                 </tr> 
             </table> 
         </form>

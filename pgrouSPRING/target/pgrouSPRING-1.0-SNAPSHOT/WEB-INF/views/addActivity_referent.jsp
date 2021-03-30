@@ -16,12 +16,6 @@
         <li><a>Ajout d'activités</a></li>
     </ul>
 
-    <table align="right"> 
-            <tr><td>Admin</td></tr>
-            <tr><td>Connecté</td></tr>
-            <tr><td>Deconnexion</td></tr>
-    </table>
-
     <h1 align = "center">Bienvenue Nom_Referent_Equipe</h1> 
 
     <table align="left"> 

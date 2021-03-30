@@ -6,6 +6,8 @@
 package org.centrale.pgrou.controllers;
 
 import java.util.List;
+import java.util.Optional;
+import javax.servlet.http.HttpServletRequest;
 import org.centrale.pgrou.items.Researcher;
 import org.centrale.pgrou.repositories.ResearcherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,5 +35,22 @@ public class SuppressionProfileController {
         return returned;
     }
     
-    
+    @RequestMapping(value="suppressionProfile.do",method=RequestMethod.POST)
+    public ModelAndView handlePost(HttpServletRequest request) {
+        ModelAndView returned ;
+        
+        String idStr = request.getParameter("id");
+        if (idStr != null){
+            //int id = Integer.parseInt(idStr);
+            Optional<Researcher> researcher = researcherRepository.findById(idStr);
+            if (researcher.isPresent()){
+                researcherRepository.delete(researcher.get());
+            }
+        }
+        
+        List<Researcher> listResearchers = researcherRepository.findAll();
+        returned = new ModelAndView("Suppression_de_profil");
+        returned.addObject("listResearchers", listResearchers);
+        return returned;
+    }
 }

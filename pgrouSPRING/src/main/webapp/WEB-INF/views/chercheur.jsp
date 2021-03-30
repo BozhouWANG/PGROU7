@@ -26,7 +26,9 @@ and open the template in the editor.
                 <li><a onclick="document.getElementById('suppProfileForm').submit();">Supprimer Profil</a></button></li>
             </form> 
             <li><a>Extraction d'activités</a></li>
-            <li><a>Ajout d'activités</a></li>
+            <form id="newActivity" action="newActivity.do" method="GET" >   
+                <li><a onclick="document.getElementById('newActivity').submit();">Ajout d'activités</a></li>
+            </form>
         </ul>
         
         <div class="connexionInfos">
@@ -102,7 +104,7 @@ and open the template in the editor.
                     <td><input type="text" name="emailAddress"/></td> 
                 </tr>
                 
-                
+                <!--
                 <tr>
                     <td>Encordrez vous un doctorant?</td> 
                     <td><input type="radio" name="encadreDoct" value="Oui"/>Oui
@@ -120,6 +122,7 @@ and open the template in the editor.
                     </select> 
                     </td>     
                 </tr> 
+                -->
                 
                 <tr>
                     <td> </td>

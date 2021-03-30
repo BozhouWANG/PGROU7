@@ -27,7 +27,7 @@ public class LoginController {
     @RequestMapping(value="login.do",method=RequestMethod.POST)
     public ModelAndView handlePost(@ModelAttribute("User")User anUser) {
         ModelAndView returned;
-        if ((anUser.getUser().equals("admin")&&(anUser.getPasswd().equals("admin")))){
+        if ((anUser.getUser().equals("admin")&&(anUser.getPasswd().equals("admin")))){ //Il faudra changer ces accès avant de mettre la version en ligne
             returned = new ModelAndView("AccueilAdmin");
         } else {
             returned = new ModelAndView("AccueilIntranet");

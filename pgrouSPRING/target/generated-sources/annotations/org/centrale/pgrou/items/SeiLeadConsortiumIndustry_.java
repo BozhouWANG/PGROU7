@@ -6,7 +6,7 @@ import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 import org.centrale.pgrou.items.TypeConsortium;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-30T10:42:10")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-30T16:09:57")
 @StaticMetamodel(SeiLeadConsortiumIndustry.class)
 public class SeiLeadConsortiumIndustry_ { 
 

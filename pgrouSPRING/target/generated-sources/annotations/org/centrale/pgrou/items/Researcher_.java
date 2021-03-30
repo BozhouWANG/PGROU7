@@ -9,7 +9,7 @@ import org.centrale.pgrou.items.BelongsTeam;
 import org.centrale.pgrou.items.Emploeur;
 import org.centrale.pgrou.items.Supervisor;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-30T10:42:10")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-30T16:09:57")
 @StaticMetamodel(Researcher.class)
 public class Researcher_ { 
 

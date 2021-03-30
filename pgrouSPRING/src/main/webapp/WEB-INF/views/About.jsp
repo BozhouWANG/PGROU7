@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,12 +15,12 @@
     <h1 class="headTitle">About</h1>
 
     <div class="mainInfos">
-        <p>Cette application web a été créée par une équipe d'éudiants de l'Ecole Centrale de Nantes dans le
+        <p>Cette application web a Ã©tÃ© crÃ©Ã©e par une Ã©quipe d'Ã©udiants de l'Ecole Centrale de Nantes dans le
             contexte d'un projet de groupe en option Informatique en 2021.</p>
     </div>
 
     <div class="mainInfos">
-        <P>Le suivi de l'application a été confiée à  la DSI de l'université de Nantes.</P>
+        <P>Le suivi de l'application a Ã©tÃ© confiÃ©e Ã Â  la DSI de l'universitÃ© de Nantes.</P>
     </div>
 
     <div class="about">

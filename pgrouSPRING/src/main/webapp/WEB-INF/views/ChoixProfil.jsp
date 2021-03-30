@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,14 +20,14 @@
         <form id="suppProfileForm" action="suppressionProfile.do" method="GET" >   
             <li><a onclick="document.getElementById('suppProfileForm').submit();">Supprimer Profil</a></button></li>
         </form> 
-        <li><a>Extraction d'activités</a></li>
-        <li><a>Ajout d'activités</a></li>
+        <li><a>Extraction d'activitÃ©s</a></li>
+        <li><a>Ajout d'activitÃ©s</a></li>
     </ul>
 
     <div class="connexionInfos">
         <form action="index.do" method="GET">
-            <p>Admin : Connecté</p>
-            <input type="submit" value="Déconnexion"/><br>
+            <p>Admin : ConnectÃ©</p>
+            <input type="submit" value="DÃ©connexion"/><br>
         </form>
     </div>
 

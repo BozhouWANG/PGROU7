@@ -12,20 +12,26 @@
     <body>
         <ul class = "menuBar">
             <li><img id = "logo" src = "images/logo.png" alt ="logo"/></li>
-            <form action="login.do" method="GET" >  
-                <li><button><a>Accueil</a></button></li>
+            <form id="accueilForm" action="login.do" method="GET" >  
+                <li><a onclick="document.getElementById('accueilForm').submit();">Accueil</a></li>
             </form>
-            <form action="newProfile.do" method="GET" >   
-                <li><button><a>Nouveau Profil</a></button></li>
+            <form id="newProfileForm" action="newProfile.do" method="GET" >   
+                <li><a onclick="document.getElementById('newProfileForm').submit();">Nouveau Profil</a></li>
             </form>
-            <form action="suppressionProfile.do" method="GET" >   
-                <li><button><a>Supprimer Profil</a></button></li>
+            <form id="suppProfileForm" action="suppressionProfile.do" method="GET" >   
+                <li><a onclick="document.getElementById('suppProfileForm').submit();">Supprimer Profil</a></button></li>
             </form> 
             <li><a>Extraction d'activités</a></li>
             <li><a>Ajout d'activités</a></li>
         </ul>
 
-
+        <div class="connexionInfos">
+            <form action="index.do" method="GET">
+                <p>Admin : Connecté</p>
+                <input type="submit" value="Déconnexion"/><br>
+            </form>
+        </div>
+        
         <h1 class="headTitle"> Suppression de profil </h1>
 
         <div class="mainInfos">

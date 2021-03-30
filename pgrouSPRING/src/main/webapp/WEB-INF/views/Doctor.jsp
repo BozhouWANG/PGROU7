@@ -14,12 +14,25 @@ and open the template in the editor.
     <body>
         <ul class = "menuBar">
             <li><img id = "logo" src = "images/logo.png" alt ="logo"/></li>
-            <li><a>Accueil</a></li>
-            <li><a>Nouveau Profil</a></li>
-            <li><a>Supprimer Profil</a></li>
+            <form id="accueilForm" action="login.do" method="GET" >  
+                <li><a onclick="document.getElementById('accueilForm').submit();">Accueil</a></li>
+            </form>
+            <form id="newProfileForm" action="newProfile.do" method="GET" >   
+                <li><a onclick="document.getElementById('newProfileForm').submit();">Nouveau Profil</a></li>
+            </form>
+            <form id="suppProfileForm" action="suppressionProfile.do" method="GET" >   
+                <li><a onclick="document.getElementById('suppProfileForm').submit();">Supprimer Profil</a></button></li>
+            </form> 
             <li><a>Extraction d'activités</a></li>
             <li><a>Ajout d'activités</a></li>
         </ul>
+        
+        <div class="connexionInfos">
+            <form action="index.do" method="GET">
+                <p>Admin : Connecté</p>
+                <input type="submit" value="Déconnexion"/><br>
+            </form>
+        </div>
         
         <table align="center">
         <tr>

@@ -45,7 +45,7 @@ and open the template in the editor.
         <h2 align = "center">Inscription d'un chercheur </h2>
         
         
-        <form action="add.do" method="POST">
+        <form action="newChercheur.do" method="POST">
             <table align="center"> 
                 <tr>
                     <td> Nom</td> 

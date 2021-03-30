@@ -12,7 +12,6 @@ org\centrale\pgrou\items\Platform_.class
 org\centrale\pgrou\items\InvitedSeminar.class
 org\centrale\pgrou\controllers\SuppressionProfileController.class
 org\centrale\pgrou\items\ToolProductSoftware.class
-org\centrale\pgrou\controllers\NewChercheurController.class
 org\centrale\pgrou\items\TrainingThesisPublication_.class
 org\centrale\pgrou\controllers\StartupController.class
 org\centrale\pgrou\items\EditorialActivity_.class

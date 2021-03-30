@@ -31,19 +31,19 @@ public class AddResearcherController {
     @Autowired
     private EmployerRepository employerRepository;
 
-    @RequestMapping(value = "add.do", method = RequestMethod.GET)
+    @RequestMapping(value = "newChercheur.do", method = RequestMethod.GET)
     public ModelAndView handleGet(HttpServletRequest request) {
         ModelAndView returned;
         List<Researcher> listResearchers = researcherRepository.findAll();
         List<Emploeur> listEmployer = employerRepository.findAll();
-
+        
         returned = new ModelAndView("chercheur");
         returned.addObject("listResearchers", listResearchers);
         returned.addObject("listEmployer", listEmployer);
         return returned;
     }
 
-    @RequestMapping(value = "add.do", method = RequestMethod.POST)
+    @RequestMapping(value = "newChercheur.do", method = RequestMethod.POST)
     public ModelAndView handlePost(HttpServletRequest request) {
         ModelAndView returned;
         boolean canSave = true;

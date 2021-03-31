@@ -13,4 +13,4 @@ Pour adapter le script à la base de donnée de l'utilisateur, changer le nom et
 
 ## Auteurs
 
-Mathieu Rey-Herme, Bozhou Whang, Eva Le Flem, Irene Le Borgne, Nino Lambert
+Mathieu Rey-Herme, Bozhou Wang, Eva Le Flem, Irene Le Borgne, Nino Lambert

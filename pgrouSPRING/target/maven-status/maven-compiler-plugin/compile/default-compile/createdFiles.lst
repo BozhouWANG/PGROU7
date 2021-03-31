@@ -119,6 +119,7 @@ org\centrale\pgrou\items\EditorialActivity.class
 org\centrale\pgrou\items\Team.class
 org\centrale\pgrou\items\MeetingCongressOrg_.class
 org\centrale\pgrou\items\ChoiceEducationalOutput_.class
+org\centrale\pgrou\repositories\DoctorRepository.class
 org\centrale\pgrou\items\ResponsibilityInstitutionalComiteeJury.class
 org\centrale\pgrou\items\DoctoralStudent_.class
 org\centrale\pgrou\items\SeiClinicalTrial_.class

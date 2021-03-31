@@ -7,7 +7,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import org.centrale.pgrou.items.BackgroundStudent;
 import org.centrale.pgrou.items.StatusThesis;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-30T16:09:57")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-31T09:11:06")
 @StaticMetamodel(TrainingThesisPublication.class)
 public class TrainingThesisPublication_ { 
 

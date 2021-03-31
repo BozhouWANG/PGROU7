@@ -7,7 +7,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import org.centrale.pgrou.items.LabEvaluation;
 import org.centrale.pgrou.items.ResponsibilityInstitutionalComiteeJury;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-30T16:09:57")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2021-03-31T09:11:06")
 @StaticMetamodel(RolePiLabEval.class)
 public class RolePiLabEval_ { 
 

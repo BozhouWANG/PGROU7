@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author macar
+ * @author ECN
  */
 @Repository
 public interface ResearcherRepository extends JpaRepository<Researcher, String>{

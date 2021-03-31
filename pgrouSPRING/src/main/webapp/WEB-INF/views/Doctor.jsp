@@ -44,32 +44,32 @@
             <table align="center"> 
                 <tr>
                     <td> Nom</td>
-                    <td><input type="text" name="Nom" placeholder="Nom"/> </td> 
+                    <td><input type="text" name="nameStudent" placeholder="Nom"/> </td> 
                 </tr>
                 
                 <tr>
                     <td> Prénom</td> 
-                    <td><input type="text" name="Prénom" placeholder="Prénom"/></td> 
+                    <td><input type="text" name="surnameStudent" placeholder="Prénom"/></td> 
                 </tr> 
                 
                 <tr>
                     <td> Numéro ORCID(pas obligatoire)</td> 
-                    <td><input type="text" name="Id" placeholder="Id"/></td> 
+                    <td><input type="text" name="idOrcidStudent" placeholder="Id"/></td> 
                 </tr> 
                 
                 <tr>
                     <td> Date soutenance</td> 
-                    <td><input type="date" name="Date soutenance"/></td> 
+                    <td><input type="date" name="defenseDate"/></td> 
                 </tr>
                 
                 <tr>
                     <td> Durée thèse</td> 
-                    <td><input type="text" name="Durée thèse" placeholder="Nb de mois"/></td> 
+                    <td><input type="text" name="dateStartThesis" placeholder="Nb de mois"/></td> 
                 </tr>
                 
                 <tr>
                     <td> Devenir</td> 
-                    <td><input type="text" name="Devenir" /></td> 
+                    <td><input type="text" name="future" /></td> 
                 </tr>
                 
                 <tr>
